@@ -1,0 +1,12 @@
+
+- title = title || "Default Title Here";
+
+html
+	include segments/header.pug
+
+	//Place your content here
+	p.content=content
+
+- 	if (user !== undefined) user.toString();
+
+	include segments/footer.pug

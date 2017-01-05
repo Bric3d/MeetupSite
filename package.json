@@ -1,0 +1,26 @@
+{
+  "name": "matcha",
+  "version": "0.0.1",
+  "description": "Small hookup site, school project.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://git.codefinder.fr/Bric3d/matcha.git"
+  },
+  "keywords": [
+    "hookup",
+    "dating",
+    "site"
+  ],
+  "author": "Bric3d",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.16",
+    "pug": "^2.0.0-beta6"
+  }
+}
