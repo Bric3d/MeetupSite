@@ -10,12 +10,11 @@ let MongoClient = require('mongodb').MongoClient;
 
 // Connect to the db
 
-console.log("mongodb://" + user +":"+ pwd +"@localhost:"+ port +"/admin");
+console.log("mongodb://" + user +":"+ pwd +"@localhost:"+ port +"/matcha");
 
-MongoClient.connect("mongodb://" + user +":"+ pwd +"@localhost:"+ port +"/admin", function(err, db) {
+MongoClient.connect("mongodb://" + user +":"+ pwd +"@localhost:"+ port +"/matcha", function(err, db) {
     if(err) { return console.dir(err); }
-    // Then select a database
-    db.collection('test', function(err, collection) {});
+    db.collection('user', function(err, collection) {});
 
     db.collection('test', {w:1}, function(err, collection) {});
 
